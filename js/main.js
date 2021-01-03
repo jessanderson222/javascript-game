@@ -16,11 +16,10 @@ let win;
 let usedIndex = [];
 
 /*----- cached element references -----*/
-const squares = Array.from(document.querySelectorAll("#board div"));
+const squares = Array.from(document.querySelectorAll("#board .table-cell"));
 
 /*----- event listeners -----*/
 document.getElementById("board").addEventListener("click", handleTurn);
-console.log(document.getElementsByClassName("square"));
 const messages = document.querySelector("h2");
 document.getElementById("reset-button").addEventListener("click", init);
 /*----- functions -----*/
