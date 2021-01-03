@@ -1,13 +1,14 @@
  body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
+  background-color: #856084;
+  color: #261C15;
 }
 
 #reset-button {
   text-align: center;
   font-size: 20px;
-  border: 1px solid black;
+  border: 1px solid #261C15;
   height: 55px;
   width: 100px;
   margin: 10px;
@@ -17,13 +18,28 @@ div {
   margin: 0;
 }
 
+.game {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.board {
+  width: 70%;
+}
+
+.spacer {
+  width: 15%;
+}
+
 .square {
   position: relative;
   float:left;
   width: 30%;
   padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
   margin:1.66%;
-  background-color: white;
+  background-color: #F7F7F2;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #261C15;
 }
 
 .squareContent {
@@ -31,7 +47,6 @@ div {
   height:80%; /* = 100% - 2*10% padding */
   width:90%; /* = 100% - 2*5% padding */
   padding: 10% 5%;
-  color: black;
 }
 
 .table {
